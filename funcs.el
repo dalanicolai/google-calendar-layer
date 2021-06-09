@@ -13,7 +13,7 @@
   (defun google-calendar/org-gcal-update ()
     "Refresh OAuth token, fetch and sync calendar"
     (interactive)
-    (org-gcal-refresh-token)
+    (org-gcal--refresh-token)
     (org-gcal-fetch))
 
   (defun google-calendar/sync-cal-after-capture ()
